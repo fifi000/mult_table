@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Parametry tabeli</title>
+</head>
+<body>    
+    <div class="d-flex justify-content-center mt-3">
+        <div class="col-10 col-sm-9 col-lg-6">
+            <div class="shadow-lg p-3 mb-5 bg-body rounded">
+                <form method="post" class="row g-4">
+                    <div>
+                        <label for="dimensionInput" class="form-label">Rozmiar</label>
+                        <input id="dimensionInput" class="form-control" name="dimension" type="number" value="5" min="1" max="20">
+                    </div>
+                    <div>
+                        <label for="evenColorSelect" class="form-label">Kolor liczb parzystych</label>
+                        <select class="form-select" name="even_color" id="evenColorSelect">
+                            <option value="green" selected>Zielony</option>
+                            <option value="red">Czerwony</option>
+                            <option value="blue">Niebieski</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="oddColorSelect" class="form-label">Kolor liczb nieparzystych</label>
+                        <br/>
+                        <input id="oddColorSelect" name="odd_color" type="color" value="#24f6f9" class="form-control form-control-color">
+                    </div>
+                    <div>
+                        <input class="form-check-input" id="borderCheckBox" type="checkbox" name="with_border" checked>
+                        <label class="form-check-label" for="borderCheckBox">tabela z ramką </label>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-primary">Zatwierdź</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
